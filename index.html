@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Component</title>
+  <title>Previsão do Tempo</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,20 +12,26 @@
 
   <main class="container-fluid">
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-8">
         <div class="card previsao">
-
           <div class="wrapper-cidades">
             <p>Escolha a cidade:</p>
             <div class="dropdown">
               <button class="btn dropdown-toggle" type="button" id="menuCidades" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               </button>
               <div class="dropdown-menu" aria-labelledby="menuCidades" id="cidades">
-                <a class="dropdown-item" href="#">Salvador</a>
-                <a class="dropdown-item" href="#">São Paulo</a>
-                <a class="dropdown-item" href="#">Rio de Janeiro</a>
+                <a class="dropdown-item" href="#" id="sal">Salvador</a>
+                <a class="dropdown-item" href="#" id="sp">São Paulo</a>
+                <a class="dropdown-item" href="#" id="rio">Rio de Janeiro</a>
               </div>
             </div>
+          </div>
+
+          <div class="row clima">
+            <div class="col-sm dia">TER</div>
+            <div class="col-sm dia">QUA</div>
+            <div class="col-sm dia">QUI</div>
+            <div class="col-sm dia">SEX</div>
           </div>
         </div>
       </div>
