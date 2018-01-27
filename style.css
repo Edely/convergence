@@ -1,0 +1,40 @@
+.card.previsao {
+  height: 200px;
+  width: 100%;
+  background: url('imagens/bg.jpg');
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card.previsao .wrapper-cidades p {
+  color: #fff;
+  font-size: 12px;
+}
+.card.previsao .wrapper-cidades {
+  width: 50%;
+  background: rgba(30, 30, 30, 0.55);
+  margin-bottom: 10px;
+  margin-left: 10px;
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+#menuCidades {
+  background-color: transparent;
+  border-radius: 0;
+  border: 1px solid #fff;
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #fff;
+}
+#menuCidades.dropdown-toggle::after {
+  display: none;
+}
+#cidades.dropdown-menu {
+  border-radius: 0;
+  width: 100%;
+}
