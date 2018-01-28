@@ -34,7 +34,6 @@ $(function(){
         $(max).text(data[$(node).attr('id')][days_n[i]]['max']);
         $(min).text(data[$(node).attr('id')][days_n[i]]['min']);
     }
-
   }
 
   $('#menuCidades').text( $('#cidades a:first-of-type')[0].text);
