@@ -74,7 +74,7 @@ body{
   position: absolute;
   right: 0;
   bottom: 0;
-  padding-top: 20px;
+  padding-top: 10px;
   text-align: center;
 }
 
@@ -87,11 +87,32 @@ body{
 .dia p:first-of-type {
   font-weight: 600;
   font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .dia p span.min,
 .dia p span.max{
   font-size: 16px;
+}
+
+.dia i{
+  height: 40px;
+  display: inline-block;
+  float: left;
+  margin-top: 5px;
+}
+
+.dia i:before{
+  font-size: 1.1em;
+  margin-right: -15px;
+}
+
+i.flaticon-up-arrow{
+  color: #e40000;
+}
+
+i.flaticon-down-arrow{
+  color: #2251a7;
 }
 
 .wrapper-titulo{
@@ -130,3 +151,32 @@ i.flaticon-rain{
 i.flaticon-rain:before{
   font-size: 5em;
 }
+
+span.icon{
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: block;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.sunny{
+  background-image: url('imagens/sun.png');
+}
+
+.rainny{
+  background-image: url('imagens/rain.png');
+}
+
+.cloudly-sun{
+  background-image: url('imagens/cloud-sun.png');
+}
+
+.cloudly{
+  background-image: url('imagens/cloud-sun.png');
+}
+
+// #0097e4 - azul
+// #FFCF00 - amarelo

@@ -1,5 +1,5 @@
 $(function(){
-  // Numa aplicação real os dados seriam buscados dinamicamente, possivelmente com Ajax.
+  // Numa aplicação real os dados seriam buscados dinamicamente.
   data =
     {
       'sal':
@@ -25,22 +25,25 @@ $(function(){
       },
     };
 
-  var changeCity = function(node){
+    var changeCity = function(node){
+    $('#menuCidades span.cidade').text(node.text);
     var dias = $('.dia');
     var days_n = {0:'ter', 1: 'qua', 2:'qui', 3:'sex'};
+    var weather_options = ['sunny', 'rainny', 'cloudly-sun', 'cloudly'];
+
     for(var i = 0; i < dias.length ; i++){
+        var weather = 'icon ' + weather_options[Math.floor(Math.random() * 4)];
         var max = $(dias[i]).find('span.max')[0];
         var min = $(dias[i]).find('span.min')[0];
         $(max).text(data[$(node).attr('id')][days_n[i]]['max']);
         $(min).text(data[$(node).attr('id')][days_n[i]]['min']);
+        var clima = $(dias[i]).find('.icon')[0];
+        $(clima).attr('class', weather);
     }
   }
 
-  $('#menuCidades span.cidade').text( $('#cidades a:first-of-type')[0].text);
-
   changeCity($('#cidades a:first-of-type')[0]);
   $('#cidades .dropdown-item').click(function(){
-    $('#menuCidades span.cidade').text(this.text);
     changeCity(this);
   });
 
