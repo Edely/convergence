@@ -32,6 +32,7 @@ $(function(){
       var weather_options = ['sunny', 'rainny', 'cloudly-sun', 'cloudly'];
 
       for(var i = 0; i < dias.length ; i++){
+          // The weather icons are being choosed randomly
           var weather = 'icon ' + weather_options[Math.floor(Math.random() * 4)];
           var max = $(dias[i]).find('span.max')[0];
           var min = $(dias[i]).find('span.min')[0];

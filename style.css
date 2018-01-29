@@ -4,7 +4,7 @@ body {
   height: 100%;
 }
 body {
-  background: url(imagens/bg.jpg);
+  background: url(assets/imagens/bg.jpg);
   background-position: 0 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -138,14 +138,14 @@ span.icon {
   margin-bottom: 10px;
 }
 .sunny {
-  background-image: url('imagens/sun.png');
+  background-image: url('assets/imagens/sun.png');
 }
 .rainny {
-  background-image: url('imagens/rain.png');
+  background-image: url('assets/imagens/rain.png');
 }
 .cloudly-sun {
-  background-image: url('imagens/cloud-sun.png');
+  background-image: url('assets/imagens/cloud-sun.png');
 }
 .cloudly {
-  background-image: url('imagens/cloud-sun.png');
+  background-image: url('assets/imagens/cloud-sun.png');
 }
