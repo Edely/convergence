@@ -6,48 +6,56 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Previsão do Tempo</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="font/flaticon.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <main class="container-fluid">
     <div class="row">
-      <div class="col-sm-8">
-        <div class="card previsao">
-          <div class="wrapper-cidades">
-            <p>Escolha a cidade:</p>
-            <div class="dropdown">
-              <button class="btn dropdown-toggle" type="button" id="menuCidades" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              </button>
-              <div class="dropdown-menu" aria-labelledby="menuCidades" id="cidades">
-                <a class="dropdown-item" href="#" id="sal">Salvador</a>
-                <a class="dropdown-item" href="#" id="sp">São Paulo</a>
-                <a class="dropdown-item" href="#" id="rio">Rio de Janeiro</a>
+      <div class="col-sm-7">
+        <div class="wrapper-card">
+          <div class="card previsao">
+            <div class="wrapper-titulo">
+              <h1>PREVISÃO <br>DO TEMPO</h1>
+            </div>
+            <div class="wrapper-cidades">
+              <p>Escolha a cidade:</p>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="menuCidades" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="cidade"></span>
+                  <i class="flaticon-down-arrow-1"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="menuCidades" id="cidades">
+                  <a class="dropdown-item" href="#" id="sal">Salvador</a>
+                  <a class="dropdown-item" href="#" id="sp">São Paulo</a>
+                  <a class="dropdown-item" href="#" id="rio">Rio de Janeiro</a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="row clima">
-            <div class="col-sm dia">
-              <p>TER</p>
-              <span class="icon"></span>
-              <p><span class="max"></span>º<br>max</p>
-              <p><span class="min"></span>º<br>min</p>
-            </div>
-            <div class="col-sm dia">
-              <p>QUA</p>
-              <p><span class="max"></span>º<br>max</p>
-              <p><span class="min"></span>º<br>min</p>
-            </div>
-            <div class="col-sm dia">
-              <p>QUI</p>
-              <p><span class="max"></span>º<br>max</p>
-              <p><span class="min"></span>º<br>min</p>
-            </div>
-            <div class="col-sm dia">
-              <p>SEX</p>
-              <p><span class="max"></span>º<br>max</p>
-              <p><span class="min"></span>º<br>min</p>
+            <div class="row clima">
+              <div class="col-sm dia">
+                <p>TER</p>
+                <span class="icon"></span>
+                <p><span class="max"></span>º<br>max</p>
+                <p><span class="min"></span>º<br>min</p>
+              </div>
+              <div class="col-sm dia">
+                <p>QUA</p>
+                <p><span class="max"></span>º<br>max</p>
+                <p><span class="min"></span>º<br>min</p>
+              </div>
+              <div class="col-sm dia">
+                <p>QUI</p>
+                <p><span class="max"></span>º<br>max</p>
+                <p><span class="min"></span>º<br>min</p>
+              </div>
+              <div class="col-sm dia">
+                <p>SEX</p>
+                <p><span class="max"></span>º<br>max</p>
+                <p><span class="min"></span>º<br>min</p>
+              </div>
             </div>
           </div>
         </div>

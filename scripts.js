@@ -36,11 +36,11 @@ $(function(){
     }
   }
 
-  $('#menuCidades').text( $('#cidades a:first-of-type')[0].text);
+  $('#menuCidades span.cidade').text( $('#cidades a:first-of-type')[0].text);
 
   changeCity($('#cidades a:first-of-type')[0]);
   $('#cidades .dropdown-item').click(function(){
-    $('#menuCidades').text(this.text);
+    $('#menuCidades span.cidade').text(this.text);
     changeCity(this);
   });
 
