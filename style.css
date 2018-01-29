@@ -29,9 +29,7 @@ body {
   position: absolute;
   bottom: 0;
   height: 100px;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-right: 10px;
+  padding: 10px 10px 10px;
 }
 #menuCidades {
   background-color: transparent;
